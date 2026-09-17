@@ -1,0 +1,148 @@
+/* the actual cards container is inline-flex and wraps rows */
+.all-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, 450px);
+    gap: 40px;
+
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    align-content: start;
+}
+
+.car-details{
+ 
+    background-color: #fff;
+    color: #5e3163;
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px #000;
+    text-align: left;
+
+}
+
+.brand-name {
+font-size: 24pt;
+  text-align: center;
+  padding: 10px;
+  background-color: #8e6593;
+  color: #fff;
+}
+
+.brand-title{
+    display: flex;
+    align-items: center;
+
+    background-color: #cba7cf;
+    padding-left: 20px;
+
+    font-size: 18pt;
+    height: 60px;
+
+}
+
+a.play, a.trait{
+    color: #5E3163;
+}
+
+/* Set category icon to 50px */
+.brand-title a img, .icon {
+    border: 1px solid #5E3163;
+    padding: 5px;
+    border-radius: 10px;
+    width: 50px;
+    margin-right: 20px;
+    background-color: #cba7cf;
+}
+
+.brand-title a img:hover, .icon:hover {
+    border: 1px solid #000;
+    background-color: #FCC272;
+
+}
+
+
+.brand-title a{
+    text-decoration: none;
+}
+
+.brand-title a.brand:hover{
+    background-color: #5E3163;
+    color: #fff;
+    font-weight: bold;
+    /* padding: 8px; */
+}
+
+
+.icon-row{
+    display: flex;
+    padding: 10px;
+    padding-top: 25px;
+
+    align-content: center;
+    justify-content: space-between;
+
+}
+
+/* Clickable icon styling */
+.icon-row a img {
+    border: 1px solid #000;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: #FCC272;
+}
+
+.icon-row a img:hover {
+    border: 1px solid #5E3163;
+    background-color: #cba7cf;
+}
+
+.description {
+    padding: 10px;
+}
+
+.spec-tags {
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.spec-tags a{
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #cba7cf;
+    border: 2px solid #5E3163;
+
+    border-radius: 5px;
+    text-decoration: none;
+
+    font-size: 105%;
+    margin-top: 5px;
+}
+
+.spec-tags a:hover{
+    background-color: #5E3163;
+    color: #fff;
+    font-weight: bold;
+}
+
+.delete-tags a{
+    background-color: #fff;
+    color: #660000;
+    border: 2px solid #660000;
+}
+
+.delete-tags a:hover{
+    color: #fff;
+    background-color: #660000;   
+}
+
+.model-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
